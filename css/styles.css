@@ -14,12 +14,30 @@ body {
   letter-spacing: 00.03em;
 }
 
+body {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
 .header-style {
   background-color: var(--bckgr-bright-color);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 215px;
 }
 
 .footer-style {
   background-color: var(--bckgr-dark-color);
+  height: 252px;
+  padding-left: 215px;
+  display: flex;
+  flex-flow: column;
 }
 
 .logo {
@@ -40,6 +58,7 @@ body {
   font-size: 26px;
   color: var(--bright);
   text-decoration: none;
+  padding-top: 50px;
 }
 
 .nav-list {
@@ -47,6 +66,11 @@ body {
   color: var(--bold-color);
   list-style-type: none;
   list-style-position: inside;
+  display: flex;
+}
+
+.nav-list:first-child {
+  padding-left: 95px;
 }
 
 .nav-list a {
@@ -54,6 +78,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--bold-color);
+  padding-right: 45px;
 }
 
 .nav-list a:hover,
@@ -62,10 +87,14 @@ body {
 }
 
 .contact-list-header {
-  text-align: right;
   text-decoration: none;
   list-style-type: none;
   list-style-position: inside;
+  display: flex;
+}
+
+.contact-list-header:last-child {
+  padding-right: 227px;
 }
 
 .contact-list-header a {
@@ -73,6 +102,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: inherit;
+  padding-left: 50px;
 }
 
 .contact-list-header a:hover,
@@ -84,6 +114,7 @@ body {
   list-style-type: none;
   line-height: 30px;
   list-style-position: inside;
+  padding: 0;
 }
 
 .contact-list-footer a:hover,
@@ -105,11 +136,6 @@ body {
   font-size: 14px;
   color: #ffffff;
   opacity: 60%;
-}
-
-.wrapper {
-  background-color: #ffffff;
-  width: 1600px;
 }
 
 .intro {
