@@ -8,29 +8,18 @@
 }
 
 body {
-  background-color: #ffffff;
-  width: 1600px;
-  position: absolute;
-  margin: 20px;
-}
-
-body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #757575;
+  font-size: 16px;
+  letter-spacing: 00.03em;
 }
 
 .header-style {
   background-color: var(--bckgr-bright-color);
-  height: 80px;
-  display: flex;
-  align-items: center;
 }
 
 .footer-style {
   background-color: var(--bckgr-dark-color);
-  height: 252px;
-  padding-left: 215px;
-  padding-top: 60px;
 }
 
 .logo {
@@ -39,7 +28,6 @@ body {
   font-size: 26px;
   color: var(--dark);
   text-decoration: none;
-  padding-left: 215px;
 }
 
 .logo-blue {
@@ -55,11 +43,9 @@ body {
 }
 
 .nav-list {
-  display: flex;
   text-decoration: none;
   color: var(--bold-color);
   list-style-type: none;
-  margin-left: 93px;
   list-style-position: inside;
 }
 
@@ -68,7 +54,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--bold-color);
-  padding-right: 46px;
 }
 
 .nav-list a:hover,
@@ -77,7 +62,6 @@ body {
 }
 
 .contact-list-header {
-  display: flex;
   text-align: right;
   text-decoration: none;
   list-style-type: none;
@@ -89,7 +73,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: inherit;
-  padding-left: 50px;
 }
 
 .contact-list-header a:hover,
@@ -99,10 +82,7 @@ body {
 
 .contact-list-footer {
   list-style-type: none;
-  padding-top: 20px;
-  padding-left: 0;
   line-height: 30px;
-  letter-spacing: 0.03em;
   list-style-position: inside;
 }
 
@@ -116,7 +96,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -126,20 +105,15 @@ body {
   font-size: 14px;
   color: #ffffff;
   opacity: 60%;
-  letter-spacing: 0.03em;
 }
 
 .wrapper {
-  margin: 0 auto;
+  background-color: #ffffff;
+  width: 1600px;
 }
 
 .intro {
   background-color: var(--bckgr-dark-color);
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .intro h1 {
@@ -150,13 +124,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--bright);
-  padding-bottom: 30px;
 }
 
 .intro button {
   background: var(--highlight);
   color: var(--bright);
-  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   width: 200px;
@@ -168,31 +140,22 @@ body {
 }
 
 .lorem {
-  height: 290px;
   width: 1600px;
-  display: flex;
-  justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 0;
 }
 
 .lorem-list {
-  display: flex;
   list-style-type: none;
-  padding: 0;
 }
 
 .lorem-list-item {
   width: 270px;
   text-align: left;
-  padding: 0 15px 0 15px;
 }
 
 .lorem-list-item h3 {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.03em;
   line-height: 16px;
   color: var(--bold-color);
 }
@@ -200,54 +163,41 @@ body {
 .lorem-list-item p {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
 }
 
 .skills {
-  height: 480px;
   width: 1600px;
-  padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .skills-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--bold-color);
 }
 
 .skills-list {
-  display: flex;
-  justify-content: center;
   list-style-type: none;
 }
 
 .skills-list-item {
-  padding: 50px 15px 94px 15px;
+  width: 370px;
 }
 
 .team {
   background-color: var(--bckgr-bright-color);
-  height: 648px;
-  padding-top: 94px;
 }
 
 .team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--bold-color);
-  padding: 0;
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
   list-style-type: none;
   list-style-position: inside;
 }
@@ -256,26 +206,19 @@ body {
   width: 270px;
   height: 386px;
   background-color: var(--bright);
-  margin: 0 15px 0 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  position: relative;
 }
 
 .team-list-card figure {
-  position: relative;
-  margin: 0;
   text-align: center;
 }
 
 .team-list-card h3 {
   color: var(--bold-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 19px;
-  letter-spacing: 00.03em;
-  padding-top: 11px;
 }
 
 .team-list-card p {
@@ -284,10 +227,6 @@ body {
 
 .filter {
   width: 1170px;
-  height: 88px;
-  padding-top: 95px;
-  padding-bottom: 50px;
-  padding-left: 215px;
 }
 
 .buttons {
@@ -295,23 +234,18 @@ body {
   justify-content: center;
   list-style-type: none;
   list-style-position: inside;
-  padding: 0;
-  margin: 0;
 }
 
 .buttons button {
   color: var(--bold-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 26px;
-  letter-spacing: 00.03em;
   cursor: pointer;
   width: 114px;
   height: 38px;
   background-color: var(--bckgr-bright-color);
   border-radius: 4px;
   border: 0;
-  margin: 0 4px 0 4px;
 }
 
 .buttons button:focus,
@@ -323,20 +257,9 @@ body {
 
 .result {
   width: 1170px;
-  height: 1272px;
-  padding-top: 0;
-  padding-bottom: 93px;
-  padding-left: 215px;
-  align-content: center;
 }
 
 .result-list {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px 30px;
   list-style-type: none;
 }
 
@@ -344,28 +267,20 @@ body {
   width: 370px;
   height: 404px;
   background-color: var(--bright);
-  margin: 0;
   border: 1px solid #eeeeee;
-  position: relative;
 }
 
 .result-card figure {
-  position: relative;
-  margin: 0;
   text-align: left;
 }
 
 .result-card h3 {
   color: var(--bold-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 36px;
   letter-spacing: 00.06em;
-  padding-left: 24px;
 }
 
 .result-card p {
   line-height: 30px;
-  padding-left: 24px;
-  letter-spacing: 0.03em;
 }
