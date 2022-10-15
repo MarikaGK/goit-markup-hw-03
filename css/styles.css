@@ -19,9 +19,25 @@ body {
   margin: 0 auto;
 }
 
-.wrapper {
-  background-color: #ffffff;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.container {
+  width: 1200px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.container:first-child {
+  padding-top: 95px;
+}
+
+.container:last-child {
+  padding-bottom: 95px;
 }
 
 .header-style {
@@ -29,15 +45,35 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  padding-left: 215px;
+}
+
+.header-style-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right-side {
+  display: flex;
+  align-items: center;
 }
 
 .footer-style {
   background-color: var(--bckgr-dark-color);
   height: 252px;
-  padding-left: 215px;
+}
+
+.footer-style-items {
   display: flex;
   flex-flow: column;
+}
+
+.footer-style-items:first-child {
+  padding-top: 50px;
+}
+
+.footer-style-items:last-child {
+  padding-bottom: 60px;
 }
 
 .logo {
@@ -58,7 +94,6 @@ body {
   font-size: 26px;
   color: var(--bright);
   text-decoration: none;
-  padding-top: 50px;
 }
 
 .nav-list {
@@ -67,6 +102,7 @@ body {
   list-style-type: none;
   list-style-position: inside;
   display: flex;
+  justify-content: left;
 }
 
 .nav-list:first-child {
@@ -91,10 +127,11 @@ body {
   list-style-type: none;
   list-style-position: inside;
   display: flex;
+  justify-self: right;
 }
 
 .contact-list-header:last-child {
-  padding-right: 227px;
+  padding-right: 27px;
 }
 
 .contact-list-header a {
@@ -118,7 +155,9 @@ body {
 }
 
 .contact-list-footer a:hover,
-.contact-list-footer a:focus {
+.contact-list-footer a:focus,
+.contact-list-footer address:hover,
+.contact-list-footer address:focus {
   color: var(--highlight);
 }
 
@@ -142,6 +181,12 @@ body {
   background-color: var(--bckgr-dark-color);
 }
 
+.intro-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .intro h1 {
   text-transform: uppercase;
   font-weight: 900;
@@ -150,6 +195,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--bright);
+  padding-bottom: 30px;
 }
 
 .intro button {
@@ -166,11 +212,13 @@ body {
 }
 
 .lorem {
-  width: 1600px;
+  background-color: var(--bright);
 }
 
 .lorem-list {
-  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .lorem-list-item {
@@ -192,7 +240,7 @@ body {
 }
 
 .skills {
-  width: 1600px;
+  background-color: var(--bright);
 }
 
 .skills-header {
@@ -201,10 +249,12 @@ body {
   line-height: 42.19px;
   text-align: center;
   color: var(--bold-color);
+  padding-bottom: 50px;
 }
 
 .skills-list {
-  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills-list-item {
@@ -224,13 +274,12 @@ body {
 }
 
 .team-list {
-  list-style-type: none;
-  list-style-position: inside;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-list-card {
   width: 270px;
-  height: 386px;
   background-color: var(--bright);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -238,21 +287,28 @@ body {
 }
 
 .team-list-card figure {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list-card figcaption {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .team-list-card h3 {
   color: var(--bold-color);
   font-weight: 500;
-  line-height: 19px;
+  line-height: 30px;
 }
 
 .team-list-card p {
-  line-height: 19px;
+  line-height: 30px;
 }
 
 .filter {
-  width: 1170px;
+  background-color: var(--bright);
 }
 
 .buttons {
@@ -260,6 +316,11 @@ body {
   justify-content: center;
   list-style-type: none;
   list-style-position: inside;
+  padding-bottom: 50px;
+}
+
+.buttons li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .buttons button {
@@ -282,22 +343,35 @@ body {
 }
 
 .result {
-  width: 1170px;
+  background-color: var(--bright);
 }
 
 .result-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.result-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .result-card {
   width: 370px;
-  height: 404px;
   background-color: var(--bright);
   border: 1px solid #eeeeee;
 }
 
 .result-card figure {
+  align-items: center;
+  margin: 0;
+  padding: 0;
   text-align: left;
+}
+
+.result-card figcaption {
+  padding-left: 24px;
 }
 
 .result-card h3 {
@@ -305,6 +379,7 @@ body {
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 00.06em;
+  padding-top: 20px;
 }
 
 .result-card p {
