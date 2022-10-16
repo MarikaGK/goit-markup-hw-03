@@ -39,10 +39,10 @@ ul {
 
 .header-style {
   background-color: var(--bckgr-bright-color);
-  height: 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--bckgr-bright-color);
+  padding: 24.5px 0;
 }
 
 .header-style-items {
@@ -58,7 +58,6 @@ ul {
 
 .footer-style {
   background-color: var(--bckgr-dark-color);
-  height: 252px;
 }
 
 .footer-style-items {
@@ -94,8 +93,11 @@ ul {
   text-decoration: none;
 }
 
-.nav-list {
+.nav-item {
   flex-grow: 1;
+}
+
+.nav-list {
   text-decoration: none;
   color: var(--bold-color);
   list-style-type: none;
