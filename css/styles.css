@@ -109,7 +109,7 @@ ul {
   padding-left: 95px;
 }
 
-.nav-list a {
+.nav-list-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -117,8 +117,8 @@ ul {
   padding-right: 45px;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: var(--highlight);
 }
 
@@ -134,7 +134,7 @@ ul {
   padding-right: 27px;
 }
 
-.contact-list-header a {
+.contact-list-header-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -142,8 +142,8 @@ ul {
   padding-left: 50px;
 }
 
-.contact-list-header a:hover,
-.contact-list-header a:focus {
+.contact-list-header-link:hover,
+.contact-list-header-link:focus {
   color: var(--highlight);
 }
 
@@ -154,14 +154,14 @@ ul {
   padding: 0;
 }
 
-.contact-list-footer a:hover,
-.contact-list-footer a:focus,
-.contact-list-footer address:hover,
-.contact-list-footer address:focus {
+.contact-list-footer-link:hover,
+.contact-list-footer-link:focus,
+.contact-list-footer-address:hover,
+.contact-list-footer-address:focus {
   color: var(--highlight);
 }
 
-.address-link {
+.contact-list-footer-address {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -169,7 +169,7 @@ ul {
   color: #ffffff;
 }
 
-.contact-list-footer a {
+.contact-list-footer-link {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -187,7 +187,7 @@ ul {
   align-items: center;
 }
 
-.intro h1 {
+.intro-header {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -198,7 +198,7 @@ ul {
   padding-bottom: 30px;
 }
 
-.intro button {
+.intro-button {
   background: var(--highlight);
   color: var(--bright);
   font-weight: 700;
@@ -226,7 +226,7 @@ ul {
   text-align: left;
 }
 
-.lorem-list-item h3 {
+.lorem-list-item-title {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -234,7 +234,7 @@ ul {
   color: var(--bold-color);
 }
 
-.lorem-list-item p {
+.lorem-list-item-text {
   font-size: 14px;
   line-height: 24px;
 }
@@ -265,7 +265,7 @@ ul {
   background-color: var(--bckgr-bright-color);
 }
 
-.team h2 {
+.team-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
@@ -286,24 +286,24 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-card figure {
+.team-list-card-picture {
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.team-list-card figcaption {
+.team-list-card-description {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.team-list-card h3 {
+.team-list-card-title {
   color: var(--bold-color);
   font-weight: 500;
   line-height: 30px;
 }
 
-.team-list-card p {
+.team-list-card-text {
   line-height: 30px;
 }
 
@@ -323,7 +323,7 @@ ul {
   margin-right: 8px;
 }
 
-.buttons button {
+.buttons-button {
   color: var(--bold-color);
   font-weight: 500;
   line-height: 26px;
@@ -335,8 +335,8 @@ ul {
   border: 0;
 }
 
-.buttons button:focus,
-.buttons button:hover {
+.buttons-button:focus,
+.buttons-button:hover {
   background-color: var(--highlight);
   color: var(--bright);
   font-weight: 500;
@@ -363,18 +363,18 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.result-card figure {
+.result-card-item {
   align-items: center;
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
-.result-card figcaption {
+.result-card-description {
   padding-left: 24px;
 }
 
-.result-card h3 {
+.result-card-title {
   color: var(--bold-color);
   font-weight: 500;
   line-height: 36px;
@@ -382,6 +382,6 @@ ul {
   padding-top: 20px;
 }
 
-.result-card p {
+.result-card-text {
   line-height: 30px;
 }
