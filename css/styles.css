@@ -33,7 +33,7 @@ ul {
 }
 
 .section {
-  padding-top: 95px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -95,6 +95,7 @@ ul {
 }
 
 .nav-list {
+  flex-grow: 1;
   text-decoration: none;
   color: var(--bold-color);
   list-style-type: none;
