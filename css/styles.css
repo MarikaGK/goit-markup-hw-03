@@ -12,9 +12,6 @@ body {
   color: #757575;
   font-size: 16px;
   letter-spacing: 00.03em;
-}
-
-body {
   width: 1600px;
   margin: 0 auto;
 }
@@ -357,7 +354,7 @@ ul {
 }
 
 .result-card {
-  flex-basis: calc((100%-60px) / 3-0.5px);
+  flex-basis: calc((100%-60px) / 3-1px);
   background-color: var(--bright);
   border-bottom: 1px solid #eeeeee;
 }
